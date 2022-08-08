@@ -3,6 +3,7 @@ import { graphqlHTTP } from 'express-graphql';
 import cors from 'cors';
 import { createConnection } from 'typeorm';
 import { schema } from "./Schema";
+import { Users } from './Entities/Users'
 
 const main = async() => {
 
@@ -13,7 +14,7 @@ const main = async() => {
         password: "admin123",
         logging: true, // Log all SQL statements generated
         synchronize: false, // If true, it checks all entities and generate a table in the DB 
-        entities: []// Every table has an entity
+        entities: [Users]// Every table has an entity
     });
   
     const app = express();
