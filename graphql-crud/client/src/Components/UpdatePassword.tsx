@@ -7,7 +7,9 @@ function UpdatePassword() {
     const [currentPassword, setCurrentPassword] = useState("");
     const [newPassword, setNewPassword] = useState("");
     const [updatePassword, {error}] = useMutation(UPDATE_PASSWORD);
-
+    if (error) {
+        return <h1>{error.message}</h1>
+    }
   return (
     <div>
         <input type="text" placeholder="Username..." 
