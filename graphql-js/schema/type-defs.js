@@ -6,11 +6,23 @@ const typeDefs = gql`
         name: String!
         username: String!
         age: Int!
-        nationality: String!
+        nationality: Nationality!
+        friends: [User]
     }
 
     type Query {
         users: [User!]!
+        user(id: ID!): User!
+    }
+
+    enum Nationality {
+        CANADA
+        BRAZIL
+        INDIA
+        GERMANY
+        CHILE
+        PHILIPPINES
+        JAPAN
     }
 `
 
