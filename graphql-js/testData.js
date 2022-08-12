@@ -8,8 +8,8 @@ const UserList = [
         friends: [
           {
             id: 2,
-            name: "Pedro",
-            username: "PedroTech",
+            name: "Gru",
+            username: "KevinBanana",
             age: 20,
             nationality: "BRAZIL",
           },
@@ -24,8 +24,8 @@ const UserList = [
       },
       {
         id: 2,
-        name: "Pedro",
-        username: "PedroTech",
+        name: "Katarina",
+        username: "NoxusQueen",
         age: 20,
         nationality: "BRAZIL",
       },
@@ -38,8 +38,8 @@ const UserList = [
         friends: [
           {
             id: 2,
-            name: "Pedro",
-            username: "PedroTech",
+            name: "Kirsten",
+            username: "Kirsty",
             age: 20,
             nationality: "BRAZIL",
           },
@@ -61,4 +61,31 @@ const UserList = [
       },
     ];
 
-module.exports = { UserList };
+const MovieList = [
+  {
+    id: 1,
+    name: "Avengers Endgame",
+    yearOfPublication: 2019,
+    isInTheaters: true,
+  },
+  {
+    id: 2,
+    name: "Interstellar",
+    yearOfPublication: 2007,
+    isInTheaters: true,
+  },
+  {
+    id: 3,
+    name: "Superbad",
+    yearOfPublication: 2009,
+    isInTheaters: true,
+  },
+  {
+    id: 4,
+    name: "Minions",
+    yearOfPublication: 2035,
+    isInTheaters: false,
+  },
+];
+
+module.exports = { UserList, MovieList };
