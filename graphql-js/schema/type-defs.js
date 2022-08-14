@@ -33,6 +33,7 @@ const typeDefs = gql`
     type Mutation {
         createUser(input: CreateUserInput!): User
         updateUsername(input: UpdateUserInput!): User
+        deleteUser(id: ID!): User
     }
 
     type Movie {
